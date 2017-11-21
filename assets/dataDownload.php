@@ -89,7 +89,7 @@ if(isset($_GET['study']) && !empty($_GET['study'])) {
 } else {
     $_SESSION['study_dl'] = "---";
     $data_path = "NO_STUDY";
-    echo "Please specify a valid study name in the URL.  Contact centerforabcs@tufts.edu for details";
+    echo "Please specify a valid study name in the URL.  Contact your_email@gmail.com for details";
 }
 
 # DEBUGGING
