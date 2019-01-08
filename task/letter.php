@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
 <title>Trial <?php echo($_SESSION['current_presentation_trial']." of ".$_SESSION['max_presentations']); ?> - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -23,7 +23,7 @@ function reverse(s){
 }
 /* =======================================*/
 function continueScreen () {
-  window.location.replace("http://cognitivetask.com/shortaospan/task/check_pres.php");
+  window.location.replace("http://localhost:8000/task/check_pres.php");
 }
 /* =======================================*/
 function trial_dynamic(pres,current_set,all_letters) {

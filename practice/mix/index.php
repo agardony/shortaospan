@@ -34,7 +34,7 @@ $_SESSION['timeout'] = ($mean_RT + $sd_adj)*1000;
 <html>
 <head>
 <title>OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -83,7 +83,7 @@ $_SESSION['timeout'] = ($mean_RT + $sd_adj)*1000;
       </div>
   	</div>
     <div id="form_area">
-	    <form action="start_exp.php" method="post">
+	    <form action="http://localhost:8000/practice/mix/start_exp.php" method="post">
 		    <input class="standard_button_green" type="submit" value="START">
 	    </form>
     </div>

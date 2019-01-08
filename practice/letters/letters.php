@@ -7,7 +7,7 @@ session_start();
 $max_trials = $_SESSION['max_trials'];
 
 if ($_SESSION['trial'] >= $max_trials) {
-  header("Location: http://cognitivetask.com/shortaospan/practice/letters/end.php");
+  header("Location: http://localhost:8000/practice/letters/end.php");
 }
 else {
   # all possible trial elements
@@ -28,7 +28,7 @@ else {
 <html>
 <head>
 <title>Trial <?php echo($_SESSION['trial']." of ".$_SESSION['max_trials']); ?> - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -54,7 +54,7 @@ function reverse(s){
 }
 /* =======================================*/
 function showResponseScreen () {
-  window.location.replace("http://cognitivetask.com/shortaospan/practice/letters/response.php");
+  window.location.replace("http://localhost:8000/practice/letters/response.php");
 }
 /* =======================================*/
 function trial_dynamic(current_set) {

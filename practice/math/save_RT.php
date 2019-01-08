@@ -5,5 +5,5 @@ $_SESSION['RT'] = $_POST['reaction_time'];
 $_SESSION['all_RTs'][] = $_SESSION['RT'];
 $_SESSION['avg_RT'] = ($_SESSION['RT']/$_SESSION['trial'])*1000;
 
-header("Location: http://cognitivetask.com/shortaospan/practice/math/response.php");
+header("Location: http://localhost:8000/practice/math/response.php");
 ?>

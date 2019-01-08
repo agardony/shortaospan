@@ -10,7 +10,7 @@ $_SESSION['remaining-letters'] = $prac_letters;
 $_SESSION['remaining-sets'] = $prac_sets;
 
 
-header("Location: http://cognitivetask.com/shortaospan/practice/letters/letters.php");
+header("Location: http://localhost:8000/practice/letters/letters.php");
 
 $myfile = fopen($_SESSION['letters_data_filename'], "a") or die("cannot open file");
 $txt = "width"."\t"."height"."\t"."browser"."\t"."version"."\t"."platform"."\t"."UA"."\t"."date"."\t"."time"."\t"."worker_id"."\t"."part_id"."\t"."study"."\t"."trial"."\t"."set_size"."\t"."letters"."\t"."response"."\t"."correct"."\n";

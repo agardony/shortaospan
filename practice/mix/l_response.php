@@ -4,7 +4,7 @@ session_start();
 <html>
 <head>
 <title>Response Screen - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -32,7 +32,7 @@ session_start();
         <button id="ltr_response_button" onclick="getClicked(clicked_array,this.value)" value="N">N</button><br>
         <button id="ltr_response_button" onclick="getClicked(clicked_array,this.value)" value="R">R</button><br>
         <button id="ltr_response_button" onclick="getClicked(clicked_array,this.value)" value="Y">Y</button><br>
-        <form action="save_trial.php" method="post">
+        <form action="http://localhost:8000/practice/mix/save_trial.php" method="post">
           <input id="allclicks" type="hidden" name="clicky">
           <input id="done_button" type="submit" value="DONE">
         </form>

@@ -8,7 +8,7 @@ $set = $_SESSION['current-set'] - 1;
 
 if ($pres == $set) {
 	# move to letter response
-	header("Location: http://cognitivetask.com/shortaospan/practice/mix/l_response.php");
+	header("Location: http://localhost:8000/practice/mix/l_response.php");
 }
 else {
 	$myfile = fopen($_SESSION['mix_data_filename'], "a") or die("Unable to open file!");
@@ -23,6 +23,6 @@ else {
 	$_SESSION['clicked'] = '';
 
 	# move to next math problem
-	header("Location: http://cognitivetask.com/shortaospan/practice/mix/math.php");
+	header("Location: http://localhost:8000/practice/mix/math.php");
 }
 ?>

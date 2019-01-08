@@ -6,7 +6,7 @@ $_SESSION['presentation_count'] = 0;
 <html>
 <head>
 <title>OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -26,7 +26,7 @@ If you forget one, use the BLANK box to mark the position. When you're ready, cl
 <hr>
   	</div>
     <div id="form_area">
-	    <form action="letters/start_exp.php" method="post">
+	    <form action="http://localhost:8000/practice/letters/start_exp.php" method="post">
         <input id="win-width" type="hidden" name="win_width">
         <input id="win-height" type="hidden" name="win_height">
 		    <input class="standard_button_blue" type="submit" onclick="getResolution()" value="START">

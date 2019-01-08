@@ -160,7 +160,7 @@ function gen_all_math($set_size) {
 
 # if final trial, redirect to end page
 if ($_SESSION['current_presentation_trial'] >= $max_presentations) {
-  header("Location: http://cognitivetask.com/shortaospan/task/end.php");
+  header("Location: http://localhost:8000/task/end.php");
   $_SESSION['resp_errors_total'] = 0;
   $_SESSION['speed_errors_total'] = 0;
   $_SESSION['presentation_count'] = 0;
@@ -183,6 +183,6 @@ else {
   $_SESSION['speed_errors_trial'] = 0;
 
   # move to math problem
-  header("Location: http://cognitivetask.com/shortaospan/task/math.php");
+  header("Location: http://localhost:8000/task/math.php");
 }
 ?>

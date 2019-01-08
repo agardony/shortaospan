@@ -4,7 +4,7 @@ $_SESSION['trial'] = 0;
 <html>
 <head>
 <title>End of Task - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -16,7 +16,7 @@ $_SESSION['trial'] = 0;
 </body>
 <script>
 	function start_exp () {
-		window.location.replace('http://cognitivetask.com/shortaospan/practice/mix/index.php');
+		window.location.replace('http://localhost:8000/practice/mix/index.php');
 	}
 </script>
 </html>

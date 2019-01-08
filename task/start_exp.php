@@ -29,5 +29,5 @@ fwrite($myfile, $txt);
 fclose($myfile);
 
 # move to the generation of trial stimuli
-header("Location: http://cognitivetask.com/shortaospan/task/gen.php");
+header("Location: http://localhost:8000/task/gen.php");
 ?>

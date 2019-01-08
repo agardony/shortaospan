@@ -48,5 +48,5 @@ $_SESSION['resp_errors_trial'] += $error;
 $_SESSION['i_accuracy'] = $acc;
 $_SESSION['math_user_resp'] = $URs;
 
-header("Location: http://cognitivetask.com/shortaospan/task/letter.php");
+header("Location: http://localhost:8000/task/letter.php");
 ?>

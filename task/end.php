@@ -4,7 +4,7 @@ session_start();
 <html>
 <head>
 <title>End of Task - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -21,7 +21,7 @@ session_start();
   		?>
   		<hr>
   		<h5>Please write down the email below to report any issues experienced while completing this study
-      	<br><a href="mailto:your_email@gmail.com">your_email@gmail.com</a></h5>
+      	<br><a href="mailto:centerforabcs@tufts.edu">centerforabcs@tufts.edu</a></h5>
   		<hr>
   	</div>
 </div>

@@ -2,13 +2,13 @@
 # start session for data transfer
 session_start();
 
-# prepare for a new http://cognitivetask.com
+# prepare for a new http://aarongardony.com
 $pres = $_SESSION['presentation'];
 $set = $_SESSION['current-set'] - 1;
 
 if ($pres == $set) {
 	# move to letter response
-	header("Location: http://cognitivetask.com/shortaospan/task/l_response.php");
+	header("Location: http://localhost:8000/task/l_response.php");
 }
 else {
 	$myfile = fopen($_SESSION['task_data_filename'], "a") or die("Unable to open file!");
@@ -24,6 +24,6 @@ else {
 	$_SESSION['clicked'] = '';
 
 	# move to next math problem
-	header("Location: http://cognitivetask.com/shortaospan/task/math.php");
+	header("Location: http://localhost:8000/task/math.php");
 }
 ?>

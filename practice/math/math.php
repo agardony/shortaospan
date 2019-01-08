@@ -7,7 +7,7 @@ session_start();
 $max_trials = $_SESSION['max_trials'];
 
 if ($_SESSION['trial'] >= $max_trials) {
-  header("Location: http://cognitivetask.com/shortaospan/practice/math/end.php");
+  header("Location: http://localhost:8000/practice/math/end.php");
 }
 else {
   # all possible trial elements
@@ -84,7 +84,7 @@ else {
 <html>
 <head>
 <title>Trial <?php echo($_SESSION['trial']." of ".$_SESSION['max_trials']); ?> - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -93,7 +93,7 @@ else {
     </div>
     <div id="row">
       <div id="advance_area">
-        <form action="save_RT.php" method="post" onSubmit="document.getElementById('function_button').disabled=true;document.getElementById('function_button').value='Please Wait...';">
+        <form action="http://localhost:8000/practice/math/save_RT.php" method="post" onSubmit="document.getElementById('function_button').disabled=true;document.getElementById('function_button').value='Please Wait...';">
           <input id="myRT" type="hidden" name="reaction_time">
           <input id="function_button" type="submit" onclick="advanceScreen(start_time)" value="RESPOND">
         </form>

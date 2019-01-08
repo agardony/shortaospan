@@ -165,7 +165,7 @@ if ($_SESSION['trial'] >= $max_trials) {
   $_SESSION['speed_errors_total'] = 0;
   $_SESSION['presentation_count'] = 1;
 
-  header("Location: http://cognitivetask.com/shortaospan/task/index.php");
+  header("Location: http://localhost:8000/task/index.php");
 }
 else {
   # generate set size
@@ -184,6 +184,6 @@ else {
   $_SESSION['speed_errors_trial'] = 0;
 
   # move to math problem
-  header("Location: http://cognitivetask.com/shortaospan/practice/mix/math.php");
+  header("Location: http://localhost:8000/practice/mix/math.php");
 }
 ?>

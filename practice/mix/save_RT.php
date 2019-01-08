@@ -8,7 +8,7 @@ if (isset($_POST['reaction_time'])) {
 	$_SESSION['speed_errors_trial'] += 0;
 	
 	# move to response screen after saving RT
-	header("Location: http://cognitivetask.com/shortaospan/practice/mix/m_response.php");
+	header("Location: http://localhost:8000/practice/mix/m_response.php");
 }
 elseif (!isset($_POST['reaction_time'])) {
 	$_SESSION['RT'] = $_SESSION['timeout']/1000;
@@ -19,6 +19,6 @@ elseif (!isset($_POST['reaction_time'])) {
 	$_SESSION['resp_errors_trial'] += 0; 
 	$_SESSION['math_user_resp'] = 'SLOW';
 
-	header("Location: http://cognitivetask.com/shortaospan/practice/mix/letter.php");
+	header("Location: http://localhost:8000/practice/mix/letter.php");
 }
 ?>

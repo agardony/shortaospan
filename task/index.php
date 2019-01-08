@@ -6,7 +6,7 @@ $_SESSION['presentation_count'] = 0;
 <html>
 <head>
 <title>OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -28,7 +28,7 @@ $_SESSION['presentation_count'] = 0;
       </p>
   	</div>
     <div id="form_area">
-	    <form action="start_exp.php" method="post">
+	    <form action="http://localhost:8000/task/start_exp.php" method="post">
 		    <input class="standard_button_green" type="submit" value="START">
 	    </form>
     </div>

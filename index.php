@@ -197,10 +197,10 @@ if (!file_exists($_SESSION['study_data_path'])) {
 }
 
 $file_name = $_SESSION['part_id'].".txt";
-$_SESSION['letters_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/shortaospan/".$_SESSION['letter_data_path'].$file_name;
-$_SESSION['math_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/shortaospan/".$_SESSION['math_data_path'].$file_name;
-$_SESSION['mix_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/shortaospan/".$_SESSION['mix_data_path'].$file_name;
-$_SESSION['task_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/shortaospan/".$_SESSION['task_data_path'].$file_name;
+$_SESSION['letters_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/".$_SESSION['letter_data_path'].$file_name;
+$_SESSION['math_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/".$_SESSION['math_data_path'].$file_name;
+$_SESSION['mix_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/".$_SESSION['mix_data_path'].$file_name;
+$_SESSION['task_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/".$_SESSION['task_data_path'].$file_name;
 
 
 // echo "DEBUGGING<br>-------------------------------------------------<br>";
@@ -216,7 +216,7 @@ $_SESSION['task_data_filename'] = $_SERVER['DOCUMENT_ROOT']."/shortaospan/".$_SE
 <html>
 <head>
 <title>OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -250,6 +250,6 @@ We will begin by practicing the letter part of the experiment. When you're ready
 </html>
 <script>
 function start_experiment () {
-    window.location.assign("http://cognitivetask.com/shortaospan/practice")
+    window.location.assign("http://localhost:8000/practice")
 }
 </script>

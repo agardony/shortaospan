@@ -11,7 +11,7 @@ else {
 <html>
 <head>
 <title>Feedback - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div id="mean_accuracy">
@@ -34,7 +34,7 @@ else {
 <script>
 var timeoutNextTrial = 2000;
 function nextTrial () {
-	window.location.replace("http://cognitivetask.com/shortaospan/practice/math/math.php");
+	window.location.replace("http://localhost:8000/practice/math/math.php");
 }
 setTimeout(function() {nextTrial()},timeoutNextTrial);
 </script>

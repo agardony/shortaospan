@@ -3,12 +3,12 @@ session_start();
 
 $_SESSION['trial'] = 0;
 
-header("Location: http://cognitivetask.com/shortaospan/practice/mix/index.php");
+header("Location: http://localhost:8000/practice/mix/index.php");
 ?>
 <html>
 <head>
 <title>End of Task - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">

@@ -34,7 +34,7 @@ fwrite($myfile, $txt);
 fclose($myfile);
 
 # generate next trial stim
-header("Location: http://cognitivetask.com/shortaospan/practice/mix/feedback.php");
+header("Location: http://localhost:8000/practice/mix/feedback.php");
 
 # housekeeping
 $_SESSION['trial'] = $_SESSION['trial'] + 1;

@@ -6,7 +6,7 @@ unset($_POST['FALSE']);
 <html>
 <head>
 <title>Response Screen - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -18,7 +18,7 @@ unset($_POST['FALSE']);
 	    <div id="row">
 	      <div id="col2">
 	      <center>
-	        <form action="get_feedback.php" method="post" onSubmit="document.getElementsByClassName('TF')[0].disabled=true;document.getElementsByClassName('TF')[1].disabled=true;">
+	        <form action="http://localhost:8000/practice/mix/get_feedback.php" method="post" onSubmit="document.getElementsByClassName('TF')[0].disabled=true;document.getElementsByClassName('TF')[1].disabled=true;">
 	          <input id="allclicks" type="hidden" name="TRUE">
 	          <input id="function_button" class="TF" type="submit" value="TRUE">
 	        </form>
@@ -26,7 +26,7 @@ unset($_POST['FALSE']);
 	      </div>
 	      <div id="col2">
 	      <center>
-	        <form action="get_feedback.php" method="post"  onSubmit="document.getElementsByClassName('TF')[0].disabled=true;document.getElementsByClassName('TF')[1].disabled=true;">
+	        <form action="http://localhost:8000/practice/mix/get_feedback.php" method="post"  onSubmit="document.getElementsByClassName('TF')[0].disabled=true;document.getElementsByClassName('TF')[1].disabled=true;">
 	          <input id="allclicks" type="hidden" name="FALSE">
 	          <input id="function_button" class="TF" type="submit" value="FALSE">
 	        </form>
@@ -40,7 +40,7 @@ unset($_POST['FALSE']);
 <script>
     window.setTimeout(function(){
         // Move to a new location or you can do something else
-        window.location.href = "http://cognitivetask.com/shortaospan/practice/mix/get_feedback.php";
+        window.location.href = "http://localhost:8000/practice/mix/get_feedback.php";
     }, 5000);
 </script>
 </html>

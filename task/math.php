@@ -23,7 +23,7 @@ $_SESSION['given-response'] = $this_answer;
 <html>
 <head>
 <title>Trial <?php echo($_SESSION['current_presentation_trial']." of ".$_SESSION['max_presentations']); ?> - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div class="container">
@@ -32,7 +32,7 @@ $_SESSION['given-response'] = $this_answer;
     </div>
     <div id="row">
       <div id="advance_area">
-        <form action="save_RT.php" method="post" onSubmit="document.getElementById('function_button').disabled=true;document.getElementById('function_button').value='Please Wait...';">
+        <form action="http://localhost:8000/task/save_RT.php" method="post" onSubmit="document.getElementById('function_button').disabled=true;document.getElementById('function_button').value='Please Wait...';">
           <input id="myRT" type="hidden" name="reaction_time">
           <input id="function_button" type="submit" onclick="advanceScreen(start_time)" value="RESPOND">
         </form>
@@ -63,7 +63,7 @@ function advanceScreen(start_time) {
 function trial(math_problem,user_timeout) {
   document.getElementById("letters").innerHTML = math_problem;
   setTimeout(function() {
-    window.location.replace('http://cognitivetask.com/shortaospan/task/save_RT.php');
+    window.location.replace('http://localhost:8000/task/save_RT.php');
   },user_timeout);
 }
 /* =======================================*/

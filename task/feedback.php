@@ -20,7 +20,7 @@ else {
 <html>
 <head>
 <title>Feedback - OSPAN</title>
-<link rel="stylesheet" type="text/css" href="http://cognitivetask.com/shortaospan/assets/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/assets/style.css">
 </head>
 <body>
 <div id="mean_accuracy">
@@ -48,7 +48,7 @@ else {
 <script>
 var timeoutNextTrial = 2000;
 function nextTrial () {
-	window.location.replace("http://cognitivetask.com/shortaospan/task/gen.php");
+	window.location.replace("http://localhost:8000/task/gen.php");
 }
 setTimeout(function() {nextTrial()},timeoutNextTrial);
 </script>

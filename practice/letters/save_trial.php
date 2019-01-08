@@ -33,5 +33,5 @@ $txt = $_SESSION['screen_width']."\t".$_SESSION['screen_height']."\t".$_SESSION[
 fwrite($myfile, $txt);
 fclose($myfile);
 
-header("Location: http://cognitivetask.com/shortaospan/practice/letters/feedback.php");
+header("Location: http://localhost:8000/practice/letters/feedback.php");
 ?>

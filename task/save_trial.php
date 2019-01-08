@@ -41,5 +41,5 @@ $_SESSION['presentation_count'] = $_SESSION['presentation_count'] + 1;
 $_SESSION['clicked'] = '';
 
 # generate next trial stim
-header("Location: http://cognitivetask.com/shortaospan/task/feedback.php");
+header("Location: http://localhost:8000/task/feedback.php");
 ?>

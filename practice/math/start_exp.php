@@ -21,5 +21,5 @@ $txt = "width"."\t"."height"."\t"."browser"."\t"."version"."\t"."platform"."\t".
 fwrite($myfile, $txt);
 fclose($myfile);
 
-header("Location: http://cognitivetask.com/shortaospan/practice/math/math.php");
+header("Location: http://localhost:8000/practice/math/math.php");
 ?>
